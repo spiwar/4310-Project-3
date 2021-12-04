@@ -341,12 +341,16 @@ str(house_filtered)</code></pre>
 ##  $ zipcode      : Factor w/ 70 levels &quot;98001&quot;,&quot;98002&quot;,..: 34 59 20 14 46 53 52 4 48 11 ...
 ##  $ sqft_living15: int  1310 1270 1630 1500 1290 1160 2180 2920 1240 2640 ...
 ##  $ sqft_lot15   : int  2767 1718 8250 7776 1332 5000 5200 20330 3600 21886 ...</code></pre>
-<pre class="r"><code># 2. Building regression model-------------------------------------
+<pre class="r"><code># 2. Building regression model &amp; Evaluating the model -------------------------------------
+#
 # After cleaning and transforming the data, now is the time to build the model.
-# For the model, we chose a regression model because we feel that it is a good fit
+# For the model, we chose a linear regression model because we feel that it is a good fit
 # for this problem, and that it will tell us which variables are the most significant
 # in predicting housing prices.
-# For actual training, we used seed number 669, and 60/40 training validation split.</code></pre>
+# For actual training, we used seed number 669, and 60/40 training validation split.
+# This means that 60% of the data is used to train the model, while 40% is used for validating whether
+# the model is still good when used on an unfamiliar set of data.
+#</code></pre>
 <pre class="r"><code>## Setting seed, Creating training and validation set
 set.seed(669)
 train_index &lt;- sample(1:nrow(house_filtered), 0.6 * nrow(house_filtered))

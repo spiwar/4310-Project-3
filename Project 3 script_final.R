@@ -57,12 +57,16 @@ names1 <- c("waterfront", "condition", "grade", "zipcode")
 house_filtered[,names1] <- lapply(house_filtered[,names1], as.factor)
 str(house_filtered)
 
-# 2. Building regression model-------------------------------------
+# 2. Building regression model & Evaluating the model -------------------------------------
+#
 # After cleaning and transforming the data, now is the time to build the model.
-# For the model, we chose a regression model because we feel that it is a good fit
+# For the model, we chose a linear regression model because we feel that it is a good fit
 # for this problem, and that it will tell us which variables are the most significant
 # in predicting housing prices.
 # For actual training, we used seed number 669, and 60/40 training validation split.
+# This means that 60% of the data is used to train the model, while 40% is used for validating whether
+# the model is still good when used on an unfamiliar set of data.
+#
 #----------------------------------------------
 
 
