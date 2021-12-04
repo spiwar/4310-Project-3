@@ -1,3 +1,11 @@
+#' ---
+#' title: "Project 3"
+#' author: "VinaTeam"
+#' date: "December 3rd, 2021"
+#' ---
+
+
+
 # Problem 3 Introduction:
 # On one Earth in the multiverse of madness: With escalating home prices in King County, 
 # an aspiring NoMaj (i.e. muggle), Jacob Kawalski, who has been sleepless because Queenie decided to 
@@ -110,7 +118,7 @@ summary(price_model)
 ### Based on the summary, we could interpret:
 ### Based on the F stat and p-value, we could say this model is pretty significant
 ### The Adjusted R-squared is also relatively high : 80.87 %, which indicates a relatively good fit.
-### There are a few variables that are significant in predicting price : Year, bathroom, floors
+### There are 10 variables that are significant in predicting price : Year, bathroom, floors
 ### waterfront, grade, sqft_basement, yr_built, yr_renovated , zipcode and sqft_living15
 ###-----------------------------------------------------------------
 
@@ -124,7 +132,7 @@ accuracy(price_model_prediction_train, train_df$price)
 accuracy(price_model_prediction_valid, valid_df$price)
 
 ### -------------------------------------------------------------
-### The RMSE of the validation set is very similar to the training set,
+### The RMSE of the validation set is slightly higher compared to the training set,
 ### which doesn't suggest overfitting.
 ### The RMSE is relatively low, which indicates a good model.
 ###-------------------------------------------------------------
