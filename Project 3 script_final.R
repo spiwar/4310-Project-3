@@ -118,7 +118,7 @@ summary(price_model)
 ### Based on the summary, we could interpret:
 ### Based on the F stat and p-value, we could say this model is pretty significant
 ### The Adjusted R-squared is also relatively high : 80.87 %, which indicates a relatively good fit.
-### There are 10 variables that are significant in predicting price : Year, bathroom, floors
+### There are 10 variables that are significant in predicting price : Year, bathroom, floors,
 ### waterfront, grade, sqft_basement, yr_built, yr_renovated , zipcode and sqft_living15
 ###-----------------------------------------------------------------
 
