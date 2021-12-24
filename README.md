@@ -1,9 +1,8 @@
 # BUAN 4310 Project 3: Predicting home prices in King County
 
 ## Problem 3 Introduction:
-On one Earth in the multiverse of madness: With escalating home prices in King County, 
-an aspiring NoMaj (i.e. muggle), Jacob Kawalski, who has been sleepless because Queenie decided to 
-join the dark side, launch a real estate business. However, he needs to understand the real estate market.
+On one Earth in the multiverse of madness: With escalating home prices in King County, Jacob Kawalski decided to 
+launch a real estate business. However, he needs to understand the real estate market.
 
 ## Objectives:
 Regarding this problem, we will analyze a sample from the larger dataset 'kc_house_data_2.csv'. Based on the sample, 
